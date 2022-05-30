@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Flying</title>
+    <style>
+        #batman {
+            position: absolute;
+            top: 70%;
+            width: 200px;
+            animation: batmanAnimation 3s ease-out 0s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes batmanAnimation {
+            0% {
+                top: 80%;
+            }
+            20% {
+                top: 20%;
+                left: 0%;
+            }
+            40% {
+                top: 20%;
+                left: 80%;
+            }
+            100% {
+                top: 80%;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="batman" src="batman.png" alt="">
+    </div>
+
+</body>
+
+</html>
