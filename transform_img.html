@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        #someIMG {
+            /* position: absolute; */
+            /* right: 0; */
+            width: 250px;
+            transform: rotate(0deg);
+            /* transform: rotate(30deg) scale(2) skewY(50deg); */
+            transition: transform 1s ease 0s;
+        }
+        
+        #someIMG:hover {
+            transform: rotate(90deg);
+        }
+        
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: background-color 3s linear 0s, width 6s ease-in-out 0s;
+        }
+        
+        #box:hover {
+            width: 600px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+
+    <img id="someIMG" src="car1.png" alt="">
+    <span>aslsdasdask</span>
+</body>
+
+</html>
