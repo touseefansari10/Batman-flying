@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            /* position: absolute; */
+            background-color: aqua;
+            transition: background-color 3s linear 0s, width 5s ease-in-out 0s;
+        }
+        
+        #box:hover {
+            width: 500px;
+            background-color: brown;
+        }
+        
+        #someIMG {
+            position: absolute;
+            right: 0;
+            width: 260px;
+            transition: right 4s linear 0s;
+        }
+        
+        #someIMG:hover {
+            right: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <img id="someIMG" src="car1.png" alt="">
+
+
+
+
+
+
+
+</body>
+
+</html>
